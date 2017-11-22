@@ -1,5 +1,9 @@
 package goodview.data.io;
 
-public interface GraphReader {
+import java.io.File;
 
+import goodview.data.Graph;
+
+public interface GraphReader {
+	public Graph readGraph(File f) throws DataIOException;
 }
